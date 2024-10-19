@@ -8,19 +8,54 @@ body.light {
     background-color: #333;
     color: white;
   }
+
+  label {
+    font-size: 16px;
+  }
   
-  .settings-container {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  /* Settings.css */
+.settings-container {
+    padding: 20px; /* Innenabstand */
+    background-color: #f9f9f9; /* Hintergrundfarbe */
+    border-radius: 8px; /* Ecken abrunden */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für die Box */
+    max-width: 400px; /* Maximale Breite */
+    margin: auto; /* Zentrieren der Box */
   }
   
   .settings-container h2 {
-    margin-bottom: 10px;
+    font-size: 24px; /* Größe der Überschrift */
+    margin-bottom: 10px; /* Abstand nach unten */
+    color: #333; /* Farbe der Überschrift */
   }
   
-  label {
-    font-size: 16px;
+  .settings-container p {
+    margin-bottom: 20px; /* Abstand nach unten */
+    color: #666; /* Farbe des Textes */
+  }
+  
+  .settings-container label {
+    display: block; /* Block-Element */
+    margin-bottom: 10px; /* Abstand nach unten */
+    font-weight: bold; /* Fettschrift für die Labels */
+    color: #333; /* Farbe der Labels */
+  }
+  
+  .settings-container input[type="checkbox"] {
+    margin-right: 8px; /* Abstand nach rechts für die Checkbox */
+  }
+  
+  .settings-container select {
+    padding: 8px; /* Innenabstand */
+    border-radius: 4px; /* Ecken abrunden */
+    border: 1px solid #ccc; /* Rahmen */
+    background-color: #fff; /* Hintergrundfarbe */
+    color: #333; /* Schriftfarbe */
+    cursor: pointer; /* Zeiger für den Mauszeiger */
+  }
+  
+  .settings-container select:focus {
+    outline: none; /* Entfernen des Standard-Outline */
+    border-color: #007bff; /* Farbe des Rahmens bei Fokus */
   }
   
