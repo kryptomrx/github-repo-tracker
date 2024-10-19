@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-route
 import Header from './Header';
 import './index.css';
 import RepoDetails from './RepoDetails'; // Die Seite mit den Stats
+import Settings from './Settings';
 
 function Home() {
   const [username, setUsername] = useState('');
@@ -53,6 +54,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/repo/:username/:repoName" element={<RepoDetails />} />
+          <Route path="/settings" element={<Settings />} /> 
         </Routes>
       </div>
     </Router>

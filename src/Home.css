@@ -36,3 +36,47 @@
     background-color: #0056b3;
   }
   
+  /* Home.css */
+body.light {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+  }
+  
+  .home-container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-container input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+  }
+  
+  .home-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .home-container button:hover {
+    background-color: #0056b3;
+  }
+  

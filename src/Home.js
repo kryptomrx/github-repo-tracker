@@ -1,49 +1,38 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Header from './Header'; // Header-Komponente einfügen
-import './Home.css';
+import './Home.css';  // Importiere dein CSS für die Startseite
 
-function Home() {
+const Home = () => {
   const [username, setUsername] = useState('');
   const [repoName, setRepoName] = useState('');
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username && repoName) {
-      navigate(`/repo/${username}/${repoName}`);
+      console.log(`Fetching data for ${username}/${repoName}`);
+      // Hier würde die Navigation zur Repo-Seite erfolgen
     }
   };
 
   return (
-    <div>
-      {/* Header */}
-      <Header />
-
-      <div className="home-container">
-        <h1>GitHub Repository Tracker</h1>
-        <form onSubmit={handleSubmit} className="form-container">
-          <input
-            type="text"
-            placeholder="GitHub Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="input-field"
-          />
-          <input
-            type="text"
-            placeholder="Repository Name"
-            value={repoName}
-            onChange={(e) => setRepoName(e.target.value)}
-            className="input-field"
-          />
-          <button type="submit" className="fetch-button">
-            Fetch Repository Data
-          </button>
-        </form>
-      </div>
+    <div className="home-container">
+      <h1>GitHub Repository Tracker</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="GitHub Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Repository Name"
+          value={repoName}
+          onChange={(e) => setRepoName(e.target.value)}
+        />
+        <button type="submit">Fetch Repository Data</button>
+      </form>
     </div>
   );
-}
+};
 
 export default Home;

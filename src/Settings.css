@@ -1,0 +1,26 @@
+/* Settings.css */
+body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .settings-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .settings-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
