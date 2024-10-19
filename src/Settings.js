@@ -17,17 +17,44 @@ const Settings = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
+  const [language, setLanguage] = useState('en');
+
+  // Beispiel: Übersetzungsobjekt
+  const translations = {
+    en: {
+      settings: 'Settings',
+      darkMode: 'Dark Mode',
+      set: 'Here you can configure your settings.',
+      fetchRepoData: 'Fetch Repository Data',
+    },
+    de: {
+      settings: 'Einstellungen',
+      darkMode: 'Dunkler Modus',
+      set: 'Hier können Sie Ihre Einstellungen konfigurieren.',
+      fetchRepoData: 'Repository-Daten abrufen',
+    },
+  };
+  
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value);
+  };
+  
 
   return (
     <div className="settings-container">
-      <h2>Einstellungen</h2>
-      <p>Hier können Sie Ihre Einstellungen konfigurieren.</p>
+      <h2>{translations[language].settings}</h2>
+      <p>{translations[language].set}</p>
+      <label>{translations[language].darkMode}</label>
       <div>
         <label>
           <input type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
           Dark Mode
         </label>
       </div>
+        <select value={language} onChange={handleLanguageChange}>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+        </select>
     </div>
   );
 };
