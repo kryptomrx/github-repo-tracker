@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+GitHub Repository Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ein Tool zur Nachverfolgung von GitHub-Repositories und deren Statistiken.
+Inhaltsverzeichnis
 
-## Available Scripts
+    Beschreibung
+    Funktionen
+    Voraussetzungen
+    Installation
+    Verwendung
+    Mitwirken
+    Lizenz
 
-In the project directory, you can run:
+GitHub Repository Tracker
 
-### `npm start`
+A tool to track GitHub repositories and their statistics.
+Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Description
+    Features
+    Requirements
+    Installation
+    Usage
+    Contributing
+    License
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Beschreibung
 
-### `npm test`
+Der GitHub Repository Tracker ist ein einfaches Webtool, mit dem Benutzer die Statistiken von GitHub-Repositories in Echtzeit anzeigen können. Es ermöglicht die Anzeige von Daten wie Sterne, Forks, offene Issues und mehr.
+Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Anzeige von Sternen, Forks und offenen Issues eines GitHub-Repositories
+    Übersicht über den Haupt-Branch und das letzte Update des Repositories
+    Visuelle Darstellung der Daten mit Diagrammen
 
-### `npm run build`
+Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The GitHub Repository Tracker is a simple web tool that allows users to view real-time statistics of GitHub repositories. It displays data such as stars, forks, open issues, and more.
+Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Display stars, forks, and open issues of a GitHub repository
+    Overview of the main branch and the last update of the repository
+    Visual representation of data using charts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Voraussetzungen | Requirements
 
-### `npm run eject`
+    Node.js (v14 oder höher) | Node.js (v14 or higher)
+    Git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Installation
+1. Repository klonen | Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` bash
+git clone https://github.com/dein-benutzername/github-repo-tracker.git
+cd github-repo-tracker
+```
+2. Abhängigkeiten installieren | Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+``` bash
+npm install
+```
+3. Projekt starten | Start the project
 
-## Learn More
+```bash
+npm start
+```
+Das Projekt wird standardmäßig auf http://localhost:3000 ausgeführt.
+1. Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+``` bash
+git clone https://github.com/your-username/github-repo-tracker.git
+cd github-repo-tracker
+```
+2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
+3. Start the project
 
-### Code Splitting
+``` bash
+npm start
+```
+The project will run by default at http://localhost:3000.
+Verwendung | Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Geben Sie den GitHub-Benutzernamen und den Repository-Namen ein, um Repository-Statistiken abzurufen.
+    Verwenden Sie die Diagramme, um die wichtigsten Kennzahlen des Repositories zu sehen.
 
-### Analyzing the Bundle Size
+    Enter the GitHub username and repository name to fetch repository statistics.
+    Use the charts to visualize the main metrics of the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Mitwirken | Contributing
 
-### Making a Progressive Web App
+Beiträge sind willkommen! Forke das Repository und erstelle einen Pull-Request oder erstelle ein Issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Fork the repository and create a pull request or open an issue.
+Lizenz | License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. | This project is licensed under the MIT License.
