@@ -1,38 +1,34 @@
 .repo-details {
-    max-width: 800px; /* Maximale Breite für den Container */
-    margin: 20px auto; /* Zentriert den Container */
-    padding: 20px; /* Innenabstand */
-    background-color: #f9f9f9; /* Hintergrundfarbe */
-    border-radius: 8px; /* Abgerundete Ecken */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-}
-
-h2 {
-    font-size: 24px; /* Schriftgröße für den Titel */
-    color: #333; /* Schriftfarbe */
-}
-
-.repo-stats {
-    list-style-type: none; /* Keine Aufzählungszeichen */
-    padding: 0; /* Innenabstand entfernen */
-}
-
-.repo-stats li {
-    margin: 10px 0; /* Abstand zwischen den Listenelementen */
-    font-size: 18px; /* Schriftgröße für Statistiken */
-    color: #555; /* Schriftfarbe */
-}
-
-.chart-container {
-    position: relative; /* Positionierung für das Diagramm */
-    height: 300px; /* Höhe des Diagramms */
-    margin: 20px 0; /* Abstand um das Diagramm */
-    border: 1px solid #ccc; /* Rahmen um das Diagramm */
-    border-radius: 8px; /* Abgerundete Ecken für das Diagramm */
-    overflow: hidden; /* Überlauf ausblenden */
-}
-
-.chart-container canvas {
-    max-width: 100%; /* Diagramm darf nicht breiter als der Container sein */
-    height: auto; /* Höhe automatisch anpassen */
-}
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-stats {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .repo-stats li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .languages-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
