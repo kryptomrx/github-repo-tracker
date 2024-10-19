@@ -10,6 +10,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import MyBarChart from './MyBarChart'; // Stelle sicher, dass dieser Import korrekt ist
 import './RepoDetails.css'; // CSS für das Layout
 
 // Registrierung der Skalen und Komponenten von Chart.js
@@ -64,6 +65,12 @@ const RepoDetails = () => {
       <div className="chart-container">
         <Bar data={chartData} />
       </div>
+      {/* MyBarChart mit den Werten aus repoData */}
+      <MyBarChart 
+        stars={repoData.stargazers_count} 
+        forks={repoData.forks_count} 
+        openIssues={repoData.open_issues_count} 
+      />
     </div>
   );
 };

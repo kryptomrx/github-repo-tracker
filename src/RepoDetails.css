@@ -1,35 +1,38 @@
 .repo-details {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .repo-details h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .repo-details p {
-    margin-bottom: 20px;
-    color: #555;
-  }
-  
-  .repo-stats {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .repo-stats li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-  
-  .chart-container {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-  }
-  
+    max-width: 800px; /* Maximale Breite für den Container */
+    margin: 20px auto; /* Zentriert den Container */
+    padding: 20px; /* Innenabstand */
+    background-color: #f9f9f9; /* Hintergrundfarbe */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+
+h2 {
+    font-size: 24px; /* Schriftgröße für den Titel */
+    color: #333; /* Schriftfarbe */
+}
+
+.repo-stats {
+    list-style-type: none; /* Keine Aufzählungszeichen */
+    padding: 0; /* Innenabstand entfernen */
+}
+
+.repo-stats li {
+    margin: 10px 0; /* Abstand zwischen den Listenelementen */
+    font-size: 18px; /* Schriftgröße für Statistiken */
+    color: #555; /* Schriftfarbe */
+}
+
+.chart-container {
+    position: relative; /* Positionierung für das Diagramm */
+    height: 300px; /* Höhe des Diagramms */
+    margin: 20px 0; /* Abstand um das Diagramm */
+    border: 1px solid #ccc; /* Rahmen um das Diagramm */
+    border-radius: 8px; /* Abgerundete Ecken für das Diagramm */
+    overflow: hidden; /* Überlauf ausblenden */
+}
+
+.chart-container canvas {
+    max-width: 100%; /* Diagramm darf nicht breiter als der Container sein */
+    height: auto; /* Höhe automatisch anpassen */
+}
