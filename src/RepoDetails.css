@@ -1,0 +1,35 @@
+.repo-details {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .repo-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .repo-details p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .repo-stats {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .repo-stats li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .chart-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
